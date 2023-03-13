@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Order Form</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    h1 {
+      font-size: 44px;
+      font-weight: bolder;
+      font-family: Arial, Sans-Serif;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+  <form method="post" action="#">
+    <div class="row">
+      <div class="col-12 mt-4 mb-4"><h1 class="display-4">Fabrics by Dylan</h1></div>
+      <div class="col-6"> Select a Product <i class="fa fa-tags" aria-hidden="true"></i>
+        <div class="form-group">
+          <label for="apparel"></label>
+          <select multiple class="form-control" name="apparel" id="apparel">
+            <option value="hoodie">Hoodie</option>
+            <option value="sweater">Sweater</option>
+            <option value="jacket">Jacket</option>
+            <option value="raincoat">Raincoat</option>
+          </select>
+          <div class="form-group">
+            <label for="hats"></label>
+            <select multiple class="form-control" name="hats" id="hats">
+              <option value="longsleeve">Longsleeve</option>
+              <option value="t-shirt">T-shirt</option>
+              <option value="tanktop">Tanktop</option>
+              <option value="dressshirt">Dress Shirt</option>
+            </select>
+
+          <div class="col-6"> Choose a Color <i class="fa fa-paint-brush" aria-hidden="true"></i>
+            <div class="form-check">
+              <input type="radio" id="chooseRed" name="choose" value="red" class="form-check-input">
+              <label class="form-check-label" for="chooseRed">Red</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="chooseGreen" name="choose" value="green" class="form-check-input">
+              <label class="form-check-label" for="chooseGreen">Green</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="chooseBlue" name="choose" value="blue" class="form-check-input">
+              <label class="form-check-label" for="chooseBlue">Blue</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="chooseBlack" name="choose" value="black" class="form-check-input">
+              <label class="form-check-label" for="chooseBlack">Black</label>
+            </div>
+          </div>
+        </div>
+
+
+          <div class="col-4">Select a Size <i class="fa fa-search-minus" aria-hidden="true"></i>
+            <div class="form-check">
+              <input type="checkbox" name="choose" value="small" class="form-check-input" id="chooseSmall">
+              <label class="form-check-label" for="chooseSmall">Small</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="choose" value="medium" class="form-check-input" id="chooseMedium">
+              <label class="form-check-label" for="chooseMedium">Medium</label>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" name="choose" value="large" class="form-check-input" id="chooseLarge">
+              <label class="form-check-label" for="chooseLarge">Large</label>
+            </div>
+          </div>
+
+        <div class="form-inline">
+          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Quantity</label>
+          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          </div>
+
+          <div class="row">
+          <div class="col-12 mt-4">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Additional Comments</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+
+        </div>
+    </div>
+    </div>
+  </form>
+  </div>
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
